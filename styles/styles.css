@@ -5,15 +5,25 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header {
-
-    background-image: url(../assets/design1_image1.jpg);
-    background-repeat: no-repeat;
-    background-size: 99vw 50vh;
-    height: 56vh;
+#headerimg img {
+    height: 40vh;
+    width: 99vw;
     position: static;
-    border-bottom: solid 3.5em yellow ;
+    margin: 0;
+    padding: 0;
 
+}
+
+#upcoming {
+    margin: 0;
+    border-top: 1vh solid rgb(230, 180, 74);
+    border-bottom: 1vh solid rgb(230, 180, 74);
+    padding: 0vh;
+    background-color: rgb(250, 218, 34);
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    height: 9vh;
 }
 
 h1 {
@@ -22,57 +32,18 @@ h1 {
     font-weight: 700;
     font-size: 9vh;
     padding: 0 1rem;
-
-}
-
-#logo img {
-    height: 11vw;
-}
-
-#logo {
     position: absolute;
-    top: 36vh;
-    left: 84vw;
-    z-index: 3;
-    border-radius: 10%;
-    border: inset rgba(46, 46, 32, 0.205);
-    background-color: rgba(0, 0, 0, 0.651);
-}
+    top: 0;
 
-@media (max-width: 800px) { 
-    #logo img{
-       height: 6.3em ;
-    }
-    #logo{
-        position: absolute;
-        top: 15em;
-        left: 77vw;
-        border-radius: .5em;
-    }
-    .nav {
-        position: relative;
-        bottom: 2.5vh;
-    }
-    #fig1 {
-        margin: 0em;
-    }    
-    
- }
-
-
-main {
-    display: inline;
-    margin: 1em;
 }
 
 div nav {
-    position: relative;
-    bottom: 69vh;
+
     background-color: rgb(230, 180, 74);
     width: 18vw;
     padding: 6vh 0vh;
-    
-    
+
+
 }
 
 div nav a {
@@ -83,7 +54,7 @@ div nav a {
     text-align: center;
     padding-bottom: 2vh;
     padding-top: 2vh;
-    
+
 }
 
 div nav a:hover {
@@ -91,35 +62,139 @@ div nav a:hover {
     transition: all;
     background-color: rgb(230, 216, 97);
     width: 16.4vw;
-       
+
 }
 
-#upcoming {
-    position: absolute;
-    top: 47.5vh;
-    left: 38vw;
-    
-    padding: 1vh;
-    color: black;
-    z-index: 1;
+#logo img {
+    height: 10vw;
 }
-section{
+
+#logo {
+    position: absolute;
+    top: 33vh;
+    left: 84vw;
+    z-index: 3;
+    border-radius: 10%;
+    border: inset rgba(46, 46, 32, 0.205);
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+
+.seccion {
     display: inline-block;
 }
+
 .articulos {
-    
-    padding: 0;
+    padding: 1em;
     position: relative;
-    top: 2em;
-    left: 24vw;
+    bottom: 44vh;
+    left: 22vw;
+    text-align: justify;
+    font-size: large;
     color: black;
     text-align: justify;
-   
+}
+
+.articulos h3 {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+
+article {
+    width: 60vw;
+
+}
+
+#fig1 {
+    padding: 2em;
 }
 
 #fig1 img {
-    margin: 3em;
-    height: 27vh;
-    border: double black;
-    border-radius: 100%;
+    margin: 0;
+    height: 41vh;
+    width: 50vw;
+    border-radius: 0%;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 4em;
+    right: 9em;
+
+}
+
+#fig2 img {
+    position: absolute;
+    top: 21.5em;
+    left: 22.5vw;
+    height: 25rem;
+    width: 59.5vw;
+    opacity: 0.3;
+}
+
+#fig3 img {
+    position: relative;
+    bottom: 10em;
+    left: 1em;
+    width: 50vw;
+    height: 15em;
+    opacity: 0.2;
+}
+
+.contac {
+    position: relative;
+    top: -11em;
+    left: 17em;
+    font-size: large;
+    text-align: center;
+    width: 54vw;
+
+}
+
+.contac p {
+    padding: 1em;
+    width: 50vw;
+
+}
+
+@media (max-width: 800px) {
+    #fig2 img {
+        height: 39em;
+        position: absolute;
+        top: 23em;
+    }
+
+    .contac {
+        position: relative;
+        left: 11em;
+        top: -13em;
+    }
+
+    #fig3 img {
+        width: 57vw;
+        position: absolute;
+        top: -2.5em;
+        left: -1em;
+    }
+
+    #logo img {
+        height: 6.3em;
+    }
+
+    #logo {
+        position: absolute;
+        top: 14em;
+        left: 77vw;
+        border-radius: .5em;
+    }
+
+    .seccion {
+        position: relative;
+        left: 10em;
+    }
+    #fig1 img {
+        position: absolute;
+        left: 0.5em;
+        width: 65vw;
+        height: 16em;
+        bottom: 3.7em;
+    }
 }
