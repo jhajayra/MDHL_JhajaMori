@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #headerimg img {
@@ -30,11 +30,11 @@ h1 {
     color: rgb(255, 208, 0);
     text-shadow: 3px 4px 3px black;
     font-weight: 700;
-    font-size: 9vh;
+    font-size: 10vh;
     padding: 0 1rem;
     position: absolute;
     top: 0;
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
 div nav {
@@ -80,6 +80,12 @@ div nav a:hover {
 }
 
 
+
+
+
+
+
+/*
 .seccion {
     display: inline-block;
 }
@@ -197,4 +203,4 @@ article {
         height: 16em;
         bottom: 3.7em;
     }
-}
+} */
