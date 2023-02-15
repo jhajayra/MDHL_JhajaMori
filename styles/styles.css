@@ -2,205 +2,187 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#headerimg img {
-    height: 40vh;
-    width: 99vw;
-    position: static;
-    margin: 0;
-    padding: 0;
-
+body {
+    background-color: rgb(31, 30, 30);
 }
 
-#upcoming {
-    margin: 0;
-    border-top: 1vh solid rgb(230, 180, 74);
-    border-bottom: 1vh solid rgb(230, 180, 74);
-    padding: 0vh;
-    background-color: rgb(250, 218, 34);
-    color: black;
-    text-align: center;
-    font-size: xx-large;
-    height: 9vh;
+header {
+    display: block;
 }
 
-h1 {
+.contenedor-head {
+    height: auto;
+    background: url(../assets/design1_image1.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: 99vw 24vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-image: linear-gradient(69.6deg, rgba(0, 0, 0, 0.83) 16.2%, rgb(214, 197, 67, 0.83) 52%, rgb(0, 0, 0, 0.9) 100.2%);
+    height: 20vh;
+}
+
+.head h1 {
     color: rgb(255, 208, 0);
     text-shadow: 3px 4px 3px black;
     font-weight: 700;
     font-size: 10vh;
-    padding: 0 1rem;
-    position: absolute;
-    top: 0;
+    padding: 0vh 5vh;
     font-family: 'Courier New', Courier, monospace;
 }
 
-div nav {
-
-    background-color: rgb(230, 180, 74);
-    width: 18vw;
-    padding: 6vh 0vh;
-
-
+.logotipo img {
+    height: 26vh;
+    padding: 1vh 4vh;
 }
 
-div nav a {
-    color: black;
-    display: block;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: black;
+}
+
+nav a {
+    font-size: xx-large;
+    margin: 1vh;
+    padding: 1vh;
+    color: rgb(255, 188, 150);
     text-decoration: none;
-    font-size: larger;
-    text-align: center;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
-
 }
 
-div nav a:hover {
+nav a:hover {
     transform: scale(1.2);
     transition: all;
-    background-color: rgb(230, 216, 97);
-    width: 16.4vw;
-
+    color: orange;
 }
 
-#logo img {
-    height: 10vw;
+header .title-page {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-top: 1vh solid black;
+    border-bottom: 1vh solid black;
+    background-color: rgb(61, 53, 6);
+    color: whitesmoke;
+    font-size: larger;
+    height: 10vh;
 }
 
-#logo {
-    position: absolute;
-    top: 33vh;
-    left: 84vw;
-    z-index: 3;
-    border-radius: 10%;
-    border: inset rgba(46, 46, 32, 0.205);
-    background-color: rgba(0, 0, 0, 0.651);
-}
-
-
-
-
-
-
-
-/*
-.seccion {
-    display: inline-block;
-}
-
-.articulos {
-    padding: 1em;
-    position: relative;
-    bottom: 44vh;
-    left: 22vw;
-    text-align: justify;
-    font-size: large;
-    color: black;
-    text-align: justify;
-}
-
-.articulos h3 {
-    padding-top: 2vh;
+.title-page h2 {
+    text-decoration: underline;
     padding-bottom: 1vh;
 }
 
-article {
-    width: 60vw;
+main {
 
+    color: white;
 }
 
-#fig1 {
+.cuerpo {
+    height: auto;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info {
+    width: 60vw;
+}
+
+.imagen {
+
     padding: 2em;
 }
 
-#fig1 img {
-    margin: 0;
-    height: 41vh;
-    width: 50vw;
-    border-radius: 0%;
-    opacity: 0.2;
-    position: absolute;
-    bottom: 4em;
-    right: 9em;
+.imagen figure img {
+    height: 16em;
+    border-radius: 3em;
+    border: solid rgb(168, 3, 3);
 
 }
 
-#fig2 img {
-    position: absolute;
-    top: 21.5em;
-    left: 22.5vw;
-    height: 25rem;
-    width: 59.5vw;
-    opacity: 0.3;
+.info article,
+.game-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#fig3 img {
-    position: relative;
-    bottom: 10em;
-    left: 1em;
-    width: 50vw;
-    height: 15em;
-    opacity: 0.2;
+.game-info {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contac {
-    position: relative;
-    top: -11em;
-    left: 17em;
-    font-size: large;
-    text-align: center;
-    width: 54vw;
-
-}
-
-.contac p {
+.game-info div {
     padding: 1em;
-    width: 50vw;
-
 }
 
-@media (max-width: 800px) {
-    #fig2 img {
-        height: 39em;
-        position: absolute;
-        top: 23em;
-    }
+.game-info .table table {
+    border-collapse: collapse;
+    border: solid 0.35em rgb(231, 178, 3);   
+    background-color: rgba(0, 0, 0, 0.603)
+}
+th, td {
+    padding: 1.5vh 2vw;
+    border: solid rgb(156, 121, 4);
+    text-align: center;
+}
+th{
+    border: solid 0.35em rgb(231, 178, 3);
+    text-transform: uppercase;
+    background-color: rgb(80, 53, 0);
+}
+table .location {
+    text-transform: capitalize;
+}
+.info-foot div p {
+    padding: 0.5em;
+}
+.contacto {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .contac {
-        position: relative;
-        left: 11em;
-        top: -13em;
-    }
+.info article {
+    padding: 1.5em;
+    text-align: justify;
+}
+article h2 {
+    padding-bottom: 0.5em;
+}
 
-    #fig3 img {
-        width: 57vw;
-        position: absolute;
-        top: -2.5em;
-        left: -1em;
-    }
+article ol{
+    padding-left: 2vw;
+}
+ol h3 {
+    padding-top: 1.5vw ;
+    padding-bottom: 0.5vw;
+}
+.sub-lista li {
+    padding: 1vh 2vh;
+}
+.lista-desordenada{
+    padding: 2vh 3vw;
 
-    #logo img {
-        height: 6.3em;
-    }
-
-    #logo {
-        position: absolute;
-        top: 14em;
-        left: 77vw;
-        border-radius: .5em;
-    }
-
-    .seccion {
-        position: relative;
-        left: 10em;
-    }
-    #fig1 img {
-        position: absolute;
-        left: 0.5em;
-        width: 65vw;
-        height: 16em;
-        bottom: 3.7em;
-    }
-} */
+}
+.contac-us {
+    padding: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contac-us p, #index-info article {
+    padding: 1em;
+    font-size: larger;
+}
