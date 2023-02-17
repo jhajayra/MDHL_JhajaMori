@@ -15,7 +15,7 @@
 .show-data table {
     margin: 1em;
     border: solid rgb(22, 21, 21);
-    background-color: none;
+    background: none;
     text-transform: capitalize;
 }
 
