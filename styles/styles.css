@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+.show-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.show-data table {
+    margin: 1em;
+    border: solid rgb(22, 21, 21);
+    background-color: none;
+    text-transform: capitalize;
+}
+
+.show-data table th,
+.show-data table td {
+    background: none;
+    border: solid rgb(148, 147, 147);
+}
+
 body {
     background-color: rgb(31, 30, 30);
 }
@@ -33,7 +54,7 @@ header {
     color: rgb(255, 208, 0);
     text-shadow: 3px 4px 3px black;
     font-weight: 700;
-    font-size: 10vh;
+    font-size: 5vw;
     padding: 0vh 5vh;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -113,6 +134,17 @@ main {
     border: solid rgb(168, 3, 3);
 
 }
+.rules, .about-as {
+    padding: 2em;
+    text-align: justify;
+}
+.about-as article>h3{
+    font-size: x-large;
+    padding-top: 2vh;
+}
+.info article p{
+    padding: 1em;
+}
 
 .info article,
 .game-info {
@@ -132,25 +164,31 @@ main {
 
 .game-info .table table {
     border-collapse: collapse;
-    border: solid 0.35em rgb(231, 178, 3);   
+    border: solid 0.35em rgb(231, 178, 3);
     background-color: rgba(0, 0, 0, 0.603)
 }
-th, td {
+
+th,
+td {
     padding: 1.5vh 2vw;
     border: solid rgb(156, 121, 4);
     text-align: center;
 }
-th{
+
+th {
     border: solid 0.35em rgb(231, 178, 3);
     text-transform: uppercase;
     background-color: rgb(80, 53, 0);
 }
+
 table .location {
     text-transform: capitalize;
 }
+
 .info-foot div p {
     padding: 0.5em;
 }
+
 .contacto {
     display: flex;
     justify-content: space-between;
@@ -160,29 +198,228 @@ table .location {
     padding: 1.5em;
     text-align: justify;
 }
+
 article h2 {
     padding-bottom: 0.5em;
 }
 
-article ol{
+article ol {
     padding-left: 2vw;
 }
+
 ol h3 {
-    padding-top: 1.5vw ;
+    padding-top: 1.5vw;
     padding-bottom: 0.5vw;
 }
+
 .sub-lista li {
     padding: 1vh 2vh;
 }
-.lista-desordenada{
+
+.lista-desordenada {
     padding: 2vh 3vw;
 
 }
+
 .contac-us {
     padding: 4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.contac-us p, #index-info article {
+
+.contac-us p,
+#index-info article {
     padding: 1em;
     font-size: larger;
+}
+
+form {
+    padding: 1vh 6vw;
+}
+
+fieldset {
+    padding: 1em 1em;
+    margin: 1em 0em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+fieldset legend {
+    padding: 0em 1em;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(252, 209, 144);
+}
+
+fieldset div,
+p,
+.posicion-juego label,
+.uniforme label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    padding: 0em 2em;
+}
+
+.nombre_completo,
+.residencia,
+.nac_genero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+
+input[type="text"],
+input[type="date"] {
+    height: 2em;
+    width: 20vw;
+    border-radius: 2vh;
+    padding: 1vw;
+    font-size: large;
+    background-color: rgb(179, 177, 172);
+}
+
+.otra-info,
+.escuela {
+    display: block;
+}
+
+.gender-label,
+.grade-label,
+.escuela-label,
+.posicion-juego,
+.uniforme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gender label,
+.grade label {
+    padding: 0em 2em;
+}
+
+.escuela-label,
+.posicion-juego,
+.uniforme {
+    justify-content: space-around;
+}
+
+.escuela label,
+.posicion-juego label,
+.uniforme label {
+    padding: 1em 2em 0.5em 2em;
+}
+
+.escuela p,
+.grade p {
+    font-weight: bolder;
+    padding-bottom: 0.7em;
+}
+
+.permission {
+    text-align: justify;
+    padding: 2em 2em;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.permission>label {
+    padding: 1em 3em;
+}
+
+.permission input[type="text"] {
+    width: 40vw;
+}
+
+.permission input[type="date"] {
+    width: 14vw;
+    text-align: center;
+}
+
+.permission input[type="checkbox"] {
+    transform: scale(1.6);
+    margin: 1em;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 3em;
+}
+
+.submit button {
+    font-size: x-large;
+    padding: 1.5vh 2vw;
+    border: solid rgb(248, 199, 126);
+    ;
+    background-color: rgb(37, 32, 21);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    transform: scale(1.1);
+    transition: all;
+}
+
+td>iframe {
+    border-radius: 1em;
+    width: 15vw;
+    height: 15vh;
+    margin: 1vh 0vh;
+    border: dotted rgb(155, 1, 1);
+}
+
+@media (max-width: 800px){
+   
+    nav a{
+        font-size: larger;
+        padding: 0vh 1vh;
+        margin: 0.5vh;
+    }
+    .logotipo img {
+        height: 7em;
+    }
+    .contenedor-head {
+        height: auto;
+        background-size: 99vw 15vh;
+    }
+    
+    .head {
+        height: 15vh;
+    }
+    header .title-page, #rules {
+        font-size: medium;
+    }
+    .rules, .about-as {
+        text-align: justify;
+        padding: 1em;
+    }
+   .rules p, .about-as p {
+    font-size: medium;
+   }
+   .rules h2, .about-as h2 {
+    font-size: large;
+    padding-top: 1em;
+   }
+   fieldset, .permission,.submit button {
+    font-size: small;
+   }
+   fieldset input[type="text"]{
+    width: 30vw;
+    height: 1.4em;
+    padding-bottom: 1em;
+   }
+   * h1 {
+    font-size: 2em;
+}
+    
+
+
 }
