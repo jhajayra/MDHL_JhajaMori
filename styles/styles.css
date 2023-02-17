@@ -134,6 +134,7 @@ main {
     border: solid rgb(168, 3, 3);
 
 }
+
 .rules, .about-as {
     padding: 2em;
     text-align: justify;
@@ -374,6 +375,10 @@ td>iframe {
     height: 15vh;
     margin: 1vh 0vh;
     border: dotted rgb(155, 1, 1);
+}
+#email {
+    color: rgb(248, 206, 142);
+    text-decoration: underline orange;
 }
 
 @media (max-width: 800px){
